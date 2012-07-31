@@ -1,4 +1,4 @@
-
+"
 
 "tell pathogen to load all the cute plugins
 filetype off
@@ -92,3 +92,7 @@ set ttimeoutlen=10
 
 "gundo settings
 nnoremap <F5> :GundoToggle<CR>
+
+"powerline settings
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
