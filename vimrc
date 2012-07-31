@@ -1,5 +1,3 @@
-"
-
 "tell pathogen to load all the cute plugins
 filetype off
 call pathogen#infect()
@@ -96,3 +94,27 @@ nnoremap <F5> :GundoToggle<CR>
 "powerline settings
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+
+"buftabs setting
+noremap <f1> :bprev<CR> 
+noremap <f2> :bnext<CR>
+
+
+"python settings
+augroup ft_python
+    au!
+
+    au FileType python setlocal omnifunc=pythoncomplete#Complete
+    au FileType python setlocal define=^\s*\\(def\\\\|class\\)
+    au FileType python compiler nose
+    au FileType man nnoremap <buffer> <cr> :q<cr>
+
+    " Jesus tapdancing Christ, built-in Python syntax, you couldn't let me
+    " override this in a normal way, could you?
+    au FileType python if exists("python_space_error_highlight") | unlet python_space_error_highlight | endif
+
+    " Jesus, Python.  Five characters of punctuation for a damn string?
+    au FileType python inoremap <buffer> <c-g> _(u'')<left><left>
+
+    au FileType python inoremap <buffer> <c-b> """"""<left><left><left>
+augroup END
