@@ -10,7 +10,7 @@ Installation
 - git submodule init
 - git submodule update
 
-Update all submodules to latest verion
+Update all submodules to latest version
 --------------------------------------
 - git submodule foreach git pull origin master
 
