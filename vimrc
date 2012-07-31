@@ -1,3 +1,8 @@
+"------------------------------------------------------------------------------
+" .vimrc
+" Author: Christoph 'qitta' Piechula
+"------------------------------------------------------------------------------
+
 "tell pathogen to load all the cute plugins
 filetype off
 call pathogen#infect()
