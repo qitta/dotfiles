@@ -89,3 +89,6 @@ set completeopt=longest,menuone,preview
 set notimeout
 set ttimeout
 set ttimeoutlen=10
+
+"gundo settings
+nnoremap <F5> :GundoToggle<CR>
