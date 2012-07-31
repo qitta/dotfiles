@@ -16,7 +16,7 @@ Update all submodules to latest verion
 
 Setting up vim
 ---------------
-ln -s ~/.dotfiles/vim ~/.vim
-ln -s ~/.dotfiles/vimrc ~/.vimrc
+- ln -s ~/.dotfiles/vim ~/.vim
+- ln -s ~/.dotfiles/vimrc ~/.vimrc
 
 Happy hacking :)
