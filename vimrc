@@ -66,7 +66,6 @@ set wildignore+=*.orig
 "undo stuff
 set undofile
 set undoreload=10000
-set history
 set backup
 set undodir=~/.vim/tmp/undo//
 set backupdir=~/.vim/tmp/backup//
