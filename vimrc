@@ -3,6 +3,7 @@
 " Author: Christoph 'qitta' Piechula
 "------------------------------------------------------------------------------
 
+
 "tell pathogen to load all the cute plugins
 filetype off
 call pathogen#infect()
@@ -19,8 +20,18 @@ syntax on
 "font and sh cuteness :)
 set t_Co=256
 set cursorline
-set guifont=Inconsolata\ 12
-colorscheme jellybeans
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+colorscheme solarized
+
+"option name default optional 
+let g:solarized_termcolors= 256
+let g:solarized_termtrans = 0
+let g:solarized_degrade = 0
+let g:solarized_bold = 1
+let g:solarized_underline = 0
+let g:solarized_italic = 0
+let g:solarized_style = "dark"
+let g:solarized_contrast = "high" 
 
 "list invisible chars :)
 set list
@@ -40,6 +51,7 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=b
 set guioptions-=L
+set guioptions-=m
 set number
 set ruler
 set norelativenumber
@@ -65,10 +77,8 @@ set wildignore+=*.orig
 
 "undo stuff
 set undofile
-set undoreload=10000
-set backup
+set undoreload=1000
 set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
 set noswapfile
 
 "searching
@@ -86,6 +96,7 @@ set hidden
 set ttyfast
 set lazyredraw
 set completeopt=longest,menuone,preview
+let g:EasyMotion_leader_key = '<Leader>'
 
 "makes vim terminal working more smoothly
 set notimeout
@@ -99,6 +110,9 @@ nnoremap <F5> :GundoToggle<CR>
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
+"other stuff
+set cm=blowfish
+
 "buftabs setting
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR>
@@ -110,3 +124,4 @@ augroup ft_python
     au!
     au FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup END
+
