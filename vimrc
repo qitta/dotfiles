@@ -33,6 +33,8 @@ let g:solarized_italic = 0
 let g:solarized_style = "dark"
 let g:solarized_contrast = "high" 
 
+set background=dark
+
 "list invisible chars :)
 set list
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
@@ -103,6 +105,17 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 
+"use supertab for omnicomplete
+let g:SuperTabDefaultCompletionType = "context"
+
+"vim javascript stuff
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+"jj to run away :)
+imap jj <Esc>
+
 "gundo settings
 nnoremap <F5> :GundoToggle<CR>
 
@@ -116,7 +129,7 @@ set cm=blowfish
 "buftabs setting
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR>
-noremap <f3> :CommandTBuffer<CR>
+noremap <f3> :CommandT .<CR>
 
 
 "python settings
