@@ -21,7 +21,7 @@ syntax on
 set t_Co=256
 set cursorline
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
-colorscheme solarized
+colorscheme hybrid
 
 "option name default optional 
 let g:solarized_termcolors= 256
