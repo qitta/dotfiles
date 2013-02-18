@@ -1,0 +1,1 @@
+../bundle/gtk-vim-syntax/c.vim.example
