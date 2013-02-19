@@ -129,7 +129,7 @@ set cm=blowfish
 "buftabs setting
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR>
-noremap <f3> :CommandT .<CR>
+noremap <f3> :CommandTBuffer<CR>
 
 
 "python settings
