@@ -20,18 +20,18 @@ syntax on
 "font and sh cuteness :)
 set t_Co=256
 set cursorline
-set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 colorscheme hybrid
 
 "option name default optional 
-let g:solarized_termcolors= 256
-let g:solarized_termtrans = 0
-let g:solarized_degrade = 0
-let g:solarized_bold = 1
-let g:solarized_underline = 0
-let g:solarized_italic = 0
-let g:solarized_style = "dark"
-let g:solarized_contrast = "high" 
+"let g:solarized_termcolors= 256
+"let g:solarized_termtrans = 0
+"let g:solarized_degrade = 0
+"let g:solarized_bold = 1
+"let g:solarized_underline = 0
+"let g:solarized_italic = 0
+"let g:solarized_style = "dark"
+"let g:solarized_contrast = "high" 
 
 set background=dark
 
@@ -91,7 +91,7 @@ set showmatch
 set hlsearch
 
 "misc
-set wrap
+set nowrap
 set textwidth=80
 set colorcolumn=+1
 set hidden
