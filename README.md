@@ -14,12 +14,6 @@ Update all submodules to latest version
 --------------------------------------
 - git submodule foreach git pull origin master
 
-Notes for Command-T Plugin
---------------------------
-- cd ~/.vim/bundle/command-t/ruby/command-t/ 
-- ruby extconf.rb 
-- make 
-
 Setting up vim
 ---------------
 - ln -s ~/.dotfiles/vim ~/.vim
