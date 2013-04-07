@@ -20,7 +20,7 @@ syntax on
 "font and sh cuteness :)
 set t_Co=256
 set cursorline
-set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
 colorscheme hybrid
 
 "option name default optional 
@@ -129,7 +129,7 @@ set cm=blowfish
 "buftabs setting
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR>
-noremap <f3> :CommandTBuffer<CR>
+noremap <f3> :CtrlPBuffer<CR>
 
 
 "python settings
