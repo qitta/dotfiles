@@ -21,19 +21,19 @@ syntax on
 set t_Co=256
 set cursorline
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
-colorscheme hybrid
+colorscheme solarized 
 
 "option name default optional 
-"let g:solarized_termcolors= 256
-"let g:solarized_termtrans = 0
-"let g:solarized_degrade = 0
-"let g:solarized_bold = 1
-"let g:solarized_underline = 0
-"let g:solarized_italic = 0
-"let g:solarized_style = "dark"
-"let g:solarized_contrast = "high" 
+let g:solarized_termcolors= 256
+let g:solarized_termtrans = 0
+let g:solarized_degrade = 0
+let g:solarized_bold = 1
+let g:solarized_underline = 0
+let g:solarized_italic = 0
+let g:solarized_style = "light"
+let g:solarized_contrast = "high" 
 
-set background=dark
+set background=light
 
 "list invisible chars :)
 set list
@@ -122,6 +122,7 @@ nnoremap <F5> :GundoToggle<CR>
 "powerline settings
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+set showtabline=0
 
 "other stuff
 set cm=blowfish
