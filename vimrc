@@ -21,7 +21,7 @@ syntax on
 set t_Co=256
 set cursorline
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
-colorscheme solarized 
+colorscheme summerfruit 
 
 "option name default optional 
 let g:solarized_termcolors= 256
@@ -37,7 +37,8 @@ set background=light
 
 "list invisible chars :)
 set list
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+"set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set listchars=tab:▸\ ,extends:❯,precedes:❮
 set showbreak=↪
 set backspace=indent,eol,start
 
@@ -54,6 +55,7 @@ set guioptions-=l
 set guioptions-=b
 set guioptions-=L
 set guioptions-=m
+set guioptions-=e
 set number
 set ruler
 set norelativenumber
@@ -116,13 +118,19 @@ let g:html_indent_style1 = "inc"
 "jj to run away :)
 imap jj <Esc>
 
+"window movement
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+
 "gundo settings
 nnoremap <F5> :GundoToggle<CR>
 
 "powerline settings
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
-set showtabline=0
+set showtabline=2
 
 "other stuff
 set cm=blowfish
@@ -132,6 +140,7 @@ noremap <f1> :bprev<CR>
 noremap <f2> :bnext<CR>
 noremap <f3> :CtrlPBuffer<CR>
 
+set ofu=syntaxcomplete#Complete
 
 "python settings
 augroup ft_python
