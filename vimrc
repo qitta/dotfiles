@@ -138,13 +138,30 @@ set cm=blowfish
 "buftabs setting
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR>
-noremap <f3> :CtrlPBuffer<CR>
-
-set ofu=syntaxcomplete#Complete
+noremap <f3> :CommandT .<CR>
 
 "python settings
 augroup ft_python
     au!
     au FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup END
+
+" Python mode
+" " Enable python folding
+let g:pymode_folding = 0
+let g:pymode_lint_checker = "pep8,mccabe"
+
+" gitgutter
+let g:gitgutter_eager = 0
+  
+"Autosave when focus lost
+:au FocusLost * silent! wa"
+
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'"
 
