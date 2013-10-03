@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "vim/bundle/riv"]
+	path = vim/bundle/riv
+	url = https://github.com/Rykka/riv.vim

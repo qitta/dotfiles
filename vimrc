@@ -21,7 +21,11 @@ syntax on
 set t_Co=256
 set cursorline
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
-colorscheme summerfruit 
+colorscheme obsidian
+
+if has('gui_running')
+        colorscheme summerfruit 
+endif
 
 "option name default optional 
 "let g:solarized_termcolors= 256
@@ -33,7 +37,7 @@ colorscheme summerfruit
 "let g:solarized_style = "dark"
 "let g:solarized_contrast = "high" 
 
-set background=light
+"set background=light
 
 "list invisible chars :)
 set list
