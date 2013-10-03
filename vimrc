@@ -20,18 +20,18 @@ syntax on
 "font and sh cuteness :)
 set t_Co=256
 set cursorline
-set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 colorscheme summerfruit 
 
 "option name default optional 
-let g:solarized_termcolors= 256
-let g:solarized_termtrans = 0
-let g:solarized_degrade = 0
-let g:solarized_bold = 1
-let g:solarized_underline = 0
-let g:solarized_italic = 0
-let g:solarized_style = "light"
-let g:solarized_contrast = "high" 
+"let g:solarized_termcolors= 256
+"let g:solarized_termtrans = 0
+"let g:solarized_degrade = 0
+"let g:solarized_bold = 1
+"let g:solarized_underline = 0
+"let g:solarized_italic = 0
+"let g:solarized_style = "dark"
+"let g:solarized_contrast = "high" 
 
 set background=light
 
@@ -165,3 +165,7 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'"
 
+set spelllang=de
+
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
