@@ -131,8 +131,6 @@ nmap <silent> <C-l> :wincmd l<CR>
 "gundo settings
 nnoremap <F5> :GundoToggle<CR>
 
-"powerline settings
-let g:Powerline_symbols = 'fancy'
 set laststatus=2
 set showtabline=2
 
@@ -170,6 +168,8 @@ let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'"
 
 set spelllang=de
+
+let g:airline#extensions#tabline#enabled = 1
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
