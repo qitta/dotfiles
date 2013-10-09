@@ -170,6 +170,7 @@ let g:multi_cursor_quit_key='<Esc>'"
 set spelllang=de
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
