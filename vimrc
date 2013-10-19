@@ -20,14 +20,16 @@ syntax on
 "font and sh cuteness :)
 set t_Co=256
 set cursorline
-set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
+set guifont=PragmataPro\ 12
+
+set background=dark
 colorscheme obsidian
 
 if has('gui_running')
-        colorscheme summerfruit 
+        colorscheme base16-monokai
 endif
 
-"option name default optional 
+"option name default optional
 "let g:solarized_termcolors= 256
 "let g:solarized_termtrans = 0
 "let g:solarized_degrade = 0
@@ -35,9 +37,8 @@ endif
 "let g:solarized_underline = 0
 "let g:solarized_italic = 0
 "let g:solarized_style = "dark"
-"let g:solarized_contrast = "high" 
+"let g:solarized_contrast = "high"
 
-"set background=light
 
 "list invisible chars :)
 set list
@@ -53,7 +54,7 @@ set expandtab
 set softtabstop=4
 
 "gimme nerdy feeling
-set guioptions-=T 
+set guioptions-=T
 set guioptions-=r
 set guioptions-=l
 set guioptions-=b
@@ -138,7 +139,7 @@ set showtabline=2
 set cm=blowfish
 
 "buftabs setting
-noremap <f1> :bprev<CR> 
+noremap <f1> :bprev<CR>
 noremap <f2> :bnext<CR>
 noremap <f3> :CommandT .<CR>
 
@@ -155,7 +156,7 @@ let g:pymode_lint_checker = "pep8,mccabe"
 
 " gitgutter
 let g:gitgutter_eager = 0
-  
+
 "Autosave when focus lost
 :au FocusLost * silent! wa"
 
@@ -171,6 +172,9 @@ set spelllang=de
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+"remove trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
